@@ -1,14 +1,14 @@
 proxies:
-  - {name: 🇬🇧英国, server: 185.188.61.119, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇷🇴罗马尼亚, server: 193.29.107.163, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇷🇴罗马尼亚-1, server: 193.29.107.237, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇬🇧英国②, server: 185.188.61.119, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇷🇴罗马尼亚①, server: 193.29.107.163, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇷🇴罗马尼亚②, server: 193.29.107.237, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
   - {name: 🇧🇪比利时, server: 217.138.211.219, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇷🇴罗马尼亚-2, server: 91.90.123.115, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 🇬🇧英国-1, server: 195.181.171.233, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇷🇴罗马尼亚③, server: 91.90.123.115, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇬🇧英国①, server: 195.181.171.233, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: 🇺🇸美国, server: 198.147.22.87, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
   - {name: 🇨🇦加拿大, server: 146.70.27.37, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
   - {name: 🇷🇺俄罗斯, server: 195.158.249.36, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇷🇴罗马尼亚-3, server: 5.154.174.189, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇷🇴罗马尼亚④, server: 5.154.174.189, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -17,61 +17,61 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - 🇬🇧英国
-      - 🇬🇧英国-1
+      - 🇬🇧英国②
+      - 🇬🇧英国①
       - 🇧🇪比利时
       - 🇺🇸美国
       - 🇨🇦加拿大
       - 🇷🇺俄罗斯
-      - 🇷🇴罗马尼亚
-      - 🇷🇴罗马尼亚-1
-      - 🇷🇴罗马尼亚-2
-      - 🇷🇴罗马尼亚-3
+      - 🇷🇴罗马尼亚①
+      - 🇷🇴罗马尼亚②
+      - 🇷🇴罗马尼亚③
+      - 🇷🇴罗马尼亚④
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇬🇧英国
-      - 🇬🇧英国-1
+      - 🇬🇧英国②
+      - 🇬🇧英国①
       - 🇧🇪比利时
       - 🇺🇸美国
       - 🇨🇦加拿大
       - 🇷🇺俄罗斯
-      - 🇷🇴罗马尼亚
-      - 🇷🇴罗马尼亚-1
-      - 🇷🇴罗马尼亚-2
-      - 🇷🇴罗马尼亚-3
+      - 🇷🇴罗马尼亚①
+      - 🇷🇴罗马尼亚②
+      - 🇷🇴罗马尼亚③
+      - 🇷🇴罗马尼亚④
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - 🇬🇧英国
-      - 🇬🇧英国-1
+      - 🇬🇧英国②
+      - 🇬🇧英国①
       - 🇧🇪比利时
       - 🇺🇸美国
       - 🇨🇦加拿大
       - 🇷🇺俄罗斯
-      - 🇷🇴罗马尼亚
-      - 🇷🇴罗马尼亚-1
-      - 🇷🇴罗马尼亚-2
-      - 🇷🇴罗马尼亚-3
+      - 🇷🇴罗马尼亚①
+      - 🇷🇴罗马尼亚②
+      - 🇷🇴罗马尼亚③
+      - 🇷🇴罗马尼亚④
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - 🇬🇧英国
-      - 🇬🇧英国-1
+      - 🇬🇧英国②
+      - 🇬🇧英国①
       - 🇧🇪比利时
       - 🇺🇸美国
       - 🇨🇦加拿大
       - 🇷🇺俄罗斯
-      - 🇷🇴罗马尼亚
-      - 🇷🇴罗马尼亚-1
-      - 🇷🇴罗马尼亚-2
-      - 🇷🇴罗马尼亚-3
+      - 🇷🇴罗马尼亚①
+      - 🇷🇴罗马尼亚②
+      - 🇷🇴罗马尼亚③
+      - 🇷🇴罗马尼亚④
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -91,16 +91,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - 🇬🇧英国
-      - 🇬🇧英国-1
+      - 🇬🇧英国②
+      - 🇬🇧英国①
       - 🇧🇪比利时
       - 🇺🇸美国
       - 🇨🇦加拿大
       - 🇷🇺俄罗斯
-      - 🇷🇴罗马尼亚
-      - 🇷🇴罗马尼亚-1
-      - 🇷🇴罗马尼亚-2
-      - 🇷🇴罗马尼亚-3
+      - 🇷🇴罗马尼亚①
+      - 🇷🇴罗马尼亚②
+      - 🇷🇴罗马尼亚③
+      - 🇷🇴罗马尼亚④
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
