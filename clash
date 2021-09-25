@@ -74,6 +74,15 @@ proxies:
   - {name: 🇭🇰 香港5 原生|广州移动|V3*, server: icajm.moox.icu, port: 40001, type: vmess, uuid: 4237fde7-85fb-43f2-876a-972d4a222343, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: icajm.moox.icu}}
   - {name: 🇨🇳 台湾5 原生|广州移动|V2, server: icajm.moox.icu, port: 34005, type: vmess, uuid: 4237fde7-85fb-43f2-876a-972d4a222343, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: icajm.moox.icu}}
   - {name: 🇸🇬 新加坡2 广州移动|V2*, server: icajm.moox.icu, port: 34019, type: vmess, uuid: 4237fde7-85fb-43f2-876a-972d4a222343, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: icajm.moox.icu}}    
+  - {name: 🇭🇰 【中转】HK/香港A-广州移动, server: gz.91sir.cn, port: 30031, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
+  - {name: 🇨🇳 【中转】TW/台湾A-广州移动, server: gz.91sir.cn, port: 30030, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
+  - {name: 🇯🇵 【中转】JP/东京-广州移动, server: gz.91sir.cn, port: 30034, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
+  - {name: 🇸🇬 【中转】SG/新加坡-深圳移动, server: szcm.91sir.cn, port: 10017, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
+  - {name: 🇺🇲 【中转】US/美国-广州移动, server: gz.91sir.cn, port: 30037, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
+  - {name: 🇨🇳 【中转】TW/台湾B-广州移动, server: gz.91sir.cn, port: 30032, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
+  - {name: 🇭🇰 【中转】HK/香港B-深圳移动, server: szcm.91sir.cn, port: 10014, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
+  - {name: 🇸🇬 【中转】SG/新加坡-广州移动, server: gz.91sir.cn, port: 30036, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
+  - {name: 🇯🇵 【中转】JP/东京-深圳移动, server: szcm.91sir.cn, port: 10015, type: vmess, uuid: bc802b67-9040-4ca9-b1cd-d452ddd69e2d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: a.189.cn}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -107,6 +116,15 @@ proxy-groups:
       - 🇭🇰 香港5 原生|广州移动|V3*
       - 🇨🇳 台湾5 原生|广州移动|V2
       - 🇸🇬 新加坡2 广州移动|V2*     
+      - 🇭🇰 【中转】HK/香港A-广州移动
+      - 🇨🇳 【中转】TW/台湾A-广州移动
+      - 🇯🇵 【中转】JP/东京-广州移动
+      - 🇸🇬 【中转】SG/新加坡-深圳移动
+      - 🇺🇲 【中转】US/美国-广州移动
+      - 🇨🇳 【中转】TW/台湾B-广州移动
+      - 🇭🇰 【中转】HK/香港B-深圳移动
+      - 🇸🇬 【中转】SG/新加坡-广州移动
+      - 🇯🇵 【中转】JP/东京-深圳移动      
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,7 +154,16 @@ proxy-groups:
       - 🇸🇬 新加坡4 NF|华南移动|V3
       - 🇭🇰 香港5 原生|广州移动|V3*
       - 🇨🇳 台湾5 原生|广州移动|V2
-      - 🇸🇬 新加坡2 广州移动|V2*      
+      - 🇸🇬 新加坡2 广州移动|V2*  
+      - 🇭🇰 【中转】HK/香港A-广州移动
+      - 🇨🇳 【中转】TW/台湾A-广州移动
+      - 🇯🇵 【中转】JP/东京-广州移动
+      - 🇸🇬 【中转】SG/新加坡-深圳移动
+      - 🇺🇲 【中转】US/美国-广州移动
+      - 🇨🇳 【中转】TW/台湾B-广州移动
+      - 🇭🇰 【中转】HK/香港B-深圳移动
+      - 🇸🇬 【中转】SG/新加坡-广州移动
+      - 🇯🇵 【中转】JP/东京-深圳移动      
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
