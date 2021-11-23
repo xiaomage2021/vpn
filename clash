@@ -355,6 +355,7 @@ proxies:
       tls: true
       mux: true
       skip-cert-verify: false
+  - {name: 🇭🇰 香港微软, server: 20.187.107.205, port: 10107, type: ss, cipher: aes-256-gcm, password: sDosZfmk5R}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -385,6 +386,7 @@ proxy-groups:
       - 🇺🇸 美国02
       - 🇺🇸 美国03
       - 🇺🇸 美国04
+      - 🇭🇰 香港微软
     _index: 0
   - name: ♻️ 自动选择
     type: url-test
@@ -417,6 +419,7 @@ proxy-groups:
       - 🇺🇸 美国02
       - 🇺🇸 美国03
       - 🇺🇸 美国04
+      - 🇭🇰 香港微软
     _index: 1
   - name: 🌍 国外媒体
     type: select
