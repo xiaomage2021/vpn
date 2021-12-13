@@ -373,6 +373,18 @@ proxies:
     port: "12346"
     username: xiaoma011-uk
     password: xiaoma011    
+  - name: 美国01【番茄】
+    type: socks5
+    server: proxy.beiyundata.io
+    port: "12346"
+    username: xiaoma011-us
+    password: xiaoma011
+  - name: 美国02【番茄】
+    type: socks5
+    server: proxy.beiyundata.io
+    port: "12346"
+    username: xiaoma011-us
+    password: xiaoma011    
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -380,6 +392,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 英国01【番茄】
       - 英国02【番茄】
+      - 美国01【番茄】
+      - 美国02【番茄】
       - 🎏 试用线路
       - 🏳️‍🌈 新用户专线
       - 🇭🇰 香港01
