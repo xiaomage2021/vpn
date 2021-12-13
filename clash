@@ -355,12 +355,31 @@ proxies:
       tls: true
       mux: true
       skip-cert-verify: false
-  - {name: 🇭🇰 香港微软, server: 20.187.107.205, port: 10107, type: ss, cipher: aes-256-gcm, password: sDosZfmk5R}
+  - name: 🇭🇰 香港微软
+    server: 20.187.107.205
+    port: 10107
+    type: ss
+    cipher: aes-256-gcm
+    password: sDosZfmk5R
+  - name: 英国01【番茄】
+    type: socks5
+    server: proxy.beiyundata.io
+    port: "12346"
+    username: xiaoma011-uk
+    password: xiaoma011
+  - name: 英国02【番茄】
+    type: socks5
+    server: proxy.beiyundata.io
+    port: "12346"
+    username: xiaoma011-uk
+    password: xiaoma011    
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
+      - 英国01【番茄】
+      - 英国02【番茄】
       - 🎏 试用线路
       - 🏳️‍🌈 新用户专线
       - 🇭🇰 香港01
