@@ -5,39 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: 英国【01】
+  - name: 德国01
     type: socks5
-    server: proxy.beiyundata.io
-    port: "12346"
-    username: xiaoma011-uk
-    password: xiaoma011
-  - name: 英国【02】
+    server: proxy.iproyal.com
+    port: "12325"
+    username: xiaomage
+    password: 88888888_country-de
+  - name: 德国02
     type: socks5
-    server: proxy.beiyundata.io
-    port: "12346"
-    username: xiaoma011-uk
-    password: xiaoma011
-  - name: 美国【01】
+    server: proxy.iproyal.com
+    port: "12325"
+    username: xiaomage
+    password: 88888888_country-de
+  - name: 英国01
     type: socks5
-    server: proxy.beiyundata.io
-    port: "12346"
-    username: xiaoma011-us
-    password: xiaoma011
-  - name: 美国【02】
+    server: proxy.iproyal.com
+    port: "12325"
+    username: xiaomage
+    password: 88888888_country-gb
+  - name: 英国02
     type: socks5
-    server: proxy.beiyundata.io
-    port: "12346"
-    username: xiaoma011-us
-    password: xiaoma011
+    server: proxy.iproyal.com
+    port: "12325"
+    username: xiaomage
+    password: 88888888_country-gb
+  - name: 美国01
+    type: socks5
+    server: proxy.iproyal.com
+    port: "12325"
+    username: xiaomage
+    password: 88888888_country-us
+  - name: 美国02
+    type: socks5
+    server: proxy.iproyal.com
+    port: "12325"
+    username: xiaomage
+    password: 88888888_country-us
+  - name: 法国01
+    type: socks5
+    server: proxy.iproyal.com
+    port: "12325"
+    username: xiaomage
+    password: 88888888_country-fr
+  - name: 法国02
+    type: socks5
+    server: proxy.iproyal.com
+    port: "12325"
+    username: xiaomage
+    password: 88888888_country-fr
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - 英国【01】
-      - 英国【02】
-      - 美国【01】
-      - 美国【02】
+      - 德国01
+      - 德国02
+      - 英国01
+      - 英国02
+      - 美国01
+      - 美国02
+      - 法国01
+      - 法国02
     _index: 0
   - name: ♻️ 自动选择
     type: url-test
@@ -45,10 +73,14 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 英国【01】
-      - 英国【02】
-      - 美国【01】
-      - 美国【02】
+      - 德国01
+      - 德国02
+      - 英国01
+      - 英国02
+      - 美国01
+      - 美国02
+      - 法国01
+      - 法国02
     _index: 1
   - name: 🌍 国外媒体
     type: select
@@ -3095,7 +3127,7 @@ rules:
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
   - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
   - DOMAIN-SUFFIX,overcast.fm,🎯 全球直连
-  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
+  - DOMAIN-SUFFIX,paypal.com,🚀 节点选择
   - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
   - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
   - DOMAIN-SUFFIX,qcloud.com,🎯 全球直连
