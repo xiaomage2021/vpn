@@ -11,12 +11,20 @@ proxies:
     port: "4567"
     cipher: aes-256-cfb
     password: "88888888"
+  - name: 香港-1
+    type: socks5
+    server: 107.151.195.90
+    port: "4050"
+    username: "001"
+    password: "888888"
+    tls: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 香港
+      - 香港-1
     _index: 0
   - name: ♻️ 自动选择
     type: url-test
@@ -25,6 +33,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港
+      - 香港-1
     _index: 1
   - name: 🌍 国外媒体
     type: select
